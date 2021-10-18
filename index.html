@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <title>
+      Wolfram Bot 
+  </title>
+
+  <!-- Load Javascript and CSS for Semantic UI -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/semantic.min.js"></script>
+  <link rel="stylesheet" href="/css/semantic.min.css">
+
+  <!-- Load Techfolio CSS customizations -->
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet-default.css">
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet-customizations.css">
+
+  <link rel="stylesheet" type="text/css" href="/css/print-default.css" media="print">
+  <link rel="stylesheet" type="text/css" href="/css/print-customizations.css" media="print">
+
+  <!-- Load a rouge theme from the sample themes in css/rouge.
+       See https://benhur07b.github.io/2017/03/25/add-syntax-highlighting-to-your-jekyll-site-with-rouge.html
+  -->
+  <link rel="stylesheet" type="text/css" href="/css/rouge/igorpro.css">
+
+  <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+  
+
+
+</head>
+
+
+  <body>
+    <!-- Used by all builtin themes. Now we list number of essays and projects. -->
+
+
+
+
+
+
+<div class="nonprintable">
+  <nav class="ui stackable menu">
+    <a href="/" class="brand item">
+      <img class="ui avatar image" src="https://sayyidyofa.github.io/images/sayyid01.jpg"><span>M. Sayyidus S.Y.</span>
+    </a>
+    
+    <a href="/projects" class="  active item">Projects (2)</a>
+    
+    
+    <a href="/bio" class="  item">Resume</a>
+  </nav>
+</div>
+
+<div style="margin-top: 20px; margin-bottom: 20px" class="ui text container">
+ <h1>Wolfram Bot</h1>
+ <p><img class="ui medium right floated rounded image" src="../images/wolfram-bot.png" /></p>
+
+<p>This bot is a team college project for Software Engineering course, it is also my first attempt to learn about Continous Integration and Continous Deployment and API wrapping.</p>
+
+<p>Currently this bot has only one function: <code class="language-plaintext highlighter-rouge">/solve</code>. This command takes one argument that is a mathematical expression of quadratic equation. For example <code class="language-plaintext highlighter-rouge">/solve x^2 - y^2 + 1 = 0</code>. After a command is fired a request is sent to Wolfram Alpha API with a response of huge JSON containing detailed answer of question provided such as real solution, graphical plot, etc. Currently the bot will respond with ‘real solution’ and ‘grapichal plot’ for each question.</p>
+
+<p><img class="ui center" src="../images/wolfram-screenshot.png" /></p>
+
+<p>This bot uses free Wolfram APPID so it can’t fire more than 2000 API requests per month.</p>
+
+<p>This bot is implemented using Flask.</p>
+
+<p>Source: <a href="https://github.com/sayyidyofa/WolframBot"><i class="large github icon"></i>sayyidyofa/WolframBot</a></p>
+
+</div>
+
+
+    <!-- Always create iframes to embed videos if present. See: http://semantic-ui.com/modules/embed.html -->
+
+<script>
+  $('.ui.embed').embed();
+</script>
+
+
+  </body>
+
+</html>
