@@ -1,88 +1,76 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="mobile-web-app-capable" content="yes">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="yes" name="mobile-web-app-capable">
 
-  <title>
-      Wolfram Bot 
-  </title>
+    <title>
+        Math Nerd Bot
+    </title>
 
-  <!-- Load Javascript and CSS for Semantic UI -->
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/semantic.min.js"></script>
-  <link rel="stylesheet" href="/css/semantic.min.css">
+    <!-- Load Javascript and CSS for Semantic UI -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/semantic.min.js"></script>
+    <link href="/css/semantic.min.css" rel="stylesheet">
 
-  <!-- Load Techfolio CSS customizations -->
-  <link rel="stylesheet" type="text/css" href="/css/stylesheet-default.css">
-  <link rel="stylesheet" type="text/css" href="/css/stylesheet-customizations.css">
+    <!-- Load Techfolio CSS customizations -->
+    <link href="/css/stylesheet-default.css" rel="stylesheet" type="text/css">
+    <link href="/css/stylesheet-customizations.css" rel="stylesheet" type="text/css">
 
-  <link rel="stylesheet" type="text/css" href="/css/print-default.css" media="print">
-  <link rel="stylesheet" type="text/css" href="/css/print-customizations.css" media="print">
-
-  <!-- Load a rouge theme from the sample themes in css/rouge.
-       See https://benhur07b.github.io/2017/03/25/add-syntax-highlighting-to-your-jekyll-site-with-rouge.html
-  -->
-  <link rel="stylesheet" type="text/css" href="/css/rouge/igorpro.css">
-
-  <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
-  
-
+    <link href="/css/print-default.css" media="print" rel="stylesheet" type="text/css">
+    <link href="/css/print-customizations.css" media="print" rel="stylesheet" type="text/css">
+    <link href="/css/rouge/igorpro.css" rel="stylesheet" type="text/css">
 
 </head>
 
 
-  <body>
-    <!-- Used by all builtin themes. Now we list number of essays and projects. -->
-
-
-
-
-
-
+<body>
 <div class="nonprintable">
-  <nav class="ui stackable menu">
-    <a href="/" class="brand item">
-      <img class="ui avatar image" src="https://sayyidyofa.github.io/images/sayyid01.jpg"><span>M. Sayyidus S.Y.</span>
-    </a>
-    
-    <a href="/projects" class="  active item">Projects (2)</a>
-    
-    
-    <a href="/bio" class="  item">Resume</a>
-  </nav>
+    <nav class="ui stackable menu">
+        <img class="ui avatar image" src="/images/sayyid.jpg" alt="It me"><span>Sayyid Y.</span>
+    </nav>
 </div>
 
-<div style="margin-top: 20px; margin-bottom: 20px" class="ui text container">
- <h1>Wolfram Bot</h1>
- <p><img class="ui medium right floated rounded image" src="../images/wolfram-bot.png" /></p>
+<div class="ui text container" style="margin-top: 20px; margin-bottom: 20px">
+    <h1>Math Nerd Bot</h1>
+    <p><img class="ui medium right floated rounded image" src="/images/wolframbot.png" alt="Math Nerd Bot"/></p>
 
-<p>This bot is a team college project for Software Engineering course, it is also my first attempt to learn about Continous Integration and Continous Deployment and API wrapping.</p>
+    <p>This bot is a team college project for Software Engineering course, it is also my first attempt to learn about
+        Continous Integration and Continous Deployment and API wrapping.</p>
 
-<p>Currently this bot has only one function: <code class="language-plaintext highlighter-rouge">/solve</code>. This command takes one argument that is a mathematical expression of quadratic equation. For example <code class="language-plaintext highlighter-rouge">/solve x^2 - y^2 + 1 = 0</code>. After a command is fired a request is sent to Wolfram Alpha API with a response of huge JSON containing detailed answer of question provided such as real solution, graphical plot, etc. Currently the bot will respond with ‘real solution’ and ‘grapichal plot’ for each question.</p>
+    <p>Currently this bot has only one function: <code class="language-plaintext highlighter-rouge">/solve</code>. This
+        command takes one argument that is a mathematical expression of quadratic equation. For example <code
+                class="language-plaintext highlighter-rouge">/solve x^2 - y^2 + 1 = 0</code>. After a command is fired a
+        request is sent to Wolfram Alpha API with a response of huge JSON containing detailed answer of question
+        provided such as real solution, graphical plot, etc. Currently the bot will respond with ‘real solution’ and
+        ‘grapichal plot’ for each question.</p>
 
-<p><img class="ui center" src="../images/wolfram-screenshot.png" /></p>
+    <p><img class="ui center" src="/images/in-action.PNG" alt="Math Nerd Bot in action"/></p>
 
-<p>This bot uses free Wolfram APPID so it can’t fire more than 2000 API requests per month.</p>
+    <p>This bot uses free Wolfram APPID, so it can’t fire more than 2000 API requests per month.</p>
 
-<p>This bot is implemented using Flask.</p>
+    <p>The version that I submitted to Cloudflare Summer Challenge is implemented using Cloudflare Workers inside the
+        javascript runtime with no 3rd-party library</p>
 
-<p>Source: <a href="https://github.com/sayyidyofa/WolframBot"><i class="large github icon"></i>sayyidyofa/WolframBot</a></p>
+    <p>Source (original): <a href="https://github.com/sayyidyofa/WolframBot"><i class="large github icon"></i>sayyidyofa/WolframBot</a>
+    </p>
 
+    <p>Source (Cloudflare Worker): <a href="https://github.com/sayyidyofa/wolframbot-cf"><i
+            class="large github icon"></i>sayyidyofa/wolframbot-cf</a></p>
+
+    <p>Add the bot to try it now, if you want:</p>
+
+    <p><img class="ui center" src="/images/qr.PNG" alt="Math Nerd Bot QR Code"/></p>
 </div>
-
-
-    <!-- Always create iframes to embed videos if present. See: http://semantic-ui.com/modules/embed.html -->
 
 <script>
-  $('.ui.embed').embed();
+    $('.ui.embed').embed();
 </script>
 
 
-  </body>
+</body>
 
 </html>
